@@ -8,6 +8,14 @@ import java.io.InputStream;
 
 public class Java7Main {
 
+    public static void iGuessThisIsUsefulForSome() {
+        Integer SSN = 645_234_827;
+
+        Integer binaryVal = 0b00000101; //5
+
+        System.out.println(SSN);
+        System.out.println(binaryVal);
+    }
     public static void stringSwitch() {
 
         //only 15 years overdue...
@@ -110,6 +118,7 @@ public class Java7Main {
 
     public static void main(String[] args) {
 
+        iGuessThisIsUsefulForSome();
 
     }
 }
