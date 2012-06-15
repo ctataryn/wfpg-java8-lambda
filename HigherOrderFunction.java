@@ -31,14 +31,15 @@ public class HigherOrderFunction {
         Bracket bracket = new Bracket();
         System.out.println("Returning deferred tax calculation ");
         //Look!  A closure!
-        return () -> {reallySlowTaxCalc(new Employee(1234), bracket);};
+        return () -> {reallySlowTaxCalc(emp, bracket);};
     }
             
 
     public static void main(String[] args) {
         Runnable taxCalc = deferTaxCalc(new Employee(1234));
-
-        //taxCalc.run();
+        //.....
+        //
+        taxCalc.run();
     }
 
 }
